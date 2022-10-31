@@ -1,0 +1,204 @@
+#membership-container{
+    width: 50vw;
+    height: wrap-content;
+    margin-top: 10%;
+}
+#detail-container{
+    width: 50vw;
+    height: wrap-content;
+}
+#details-section{
+    display: flex;
+    flex-direction: row;
+}
+#details-address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#inner-details{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#detail-container h1{
+    font-size: 3rem;
+    color: white;
+}
+#details-address p{
+    margin-left: 5px;
+    font-size: 1.3rem;
+}
+#inner-details h2{
+    margin-top: 4rem;
+    color: white;
+}
+#inner-details p{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.facility-item{
+    font-size: 500;
+}
+#facilities{
+    display: flex;
+    flex-direction: row;
+}
+#facilities{
+    font-weight: 500;
+    margin: 1rem;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+#choose-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2rem;
+}
+.choose-div{
+    height: 8rem;
+    width: 8rem;
+    background-color: #920909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+}
+.choose-div img{
+    width: 3rem;
+}
+.choose-div p{
+    margin: 0 1rem;
+}
+.work img{
+    width: 3rem;
+}
+.work{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.work p{
+    margin-left: 1rem;
+    width: 80%;
+}
+#plan-name img{
+    width: 6rem;
+}
+#plan-name{
+    display: flex;
+    flex-direction: row;
+}
+#plan-name-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem 2rem 2rem
+}
+#membership-badge p{
+    margin-left: 1rem;
+}
+#membership-badge{
+    margin: 5%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#price{
+    color: white;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    border-radius: 5px;
+}
+#inner-container h1{
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+#inner-container{
+    margin: 5%;
+    border-radius: 2rem;
+    height: 100vh;
+    background-color: rgba(105, 105, 105, 0.207);
+    
+}
+#memberships{
+    overflow: scroll;
+    height: 90%;
+}
+#rating{
+    background-color: #920909;
+    padding: 1rem 4rem;
+    position: absolute;
+    width: wrap-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    margin-top: 4%;
+}
+#rating-stars{
+    margin-bottom: 0.1rem;
+}
+#buy-now-badge{
+    height: 30vh;
+    width: 100%;
+    margin-top: 10%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#buy-now-badge button{
+    border-radius: 5rem;
+    border: 2px solid grey;
+    background: transparent;
+    padding: 1.3rem;
+    color: white;
+    font-size: larger;
+    width: 20rem;
+}
+#buy-now-badge button:nth-child(1){
+    background-color: #520909;
+    border: none;
+}
+/* ...................................... Media Queries .......................................... */
+@media only screen and (max-width: 1300px) {
+    #details-section{
+        flex-direction: column;
+    }
+    #detail-container{
+        width: 100%;
+    }
+    #membership-container{
+        width: 100%;
+    }
+    #inner-details{
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #rating{
+        display: none;
+    }
+    #choose-container{
+        flex-direction: column;
+    }
+    .choose-div{
+        margin-bottom: 1rem;
+        width: 20rem;
+    }
+}

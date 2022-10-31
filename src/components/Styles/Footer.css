@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-div{
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    z-index: 0;
+    border-top: 5px solid black;
+}
+
+#left{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#mid{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+#right{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.footer-ul{
+    background-color: transparent;
+    padding: 0 !important;
+    align-items: left;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.footer-ul h5, .company-details h5, .company-details h5{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 1.2rem;
+}
+.footer-li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 1rem 0;
+    color: #868686;
+    font-size: large;
+    font-weight: 500;
+}
+.footer-li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+#footer-logo{
+    margin: auto;
+}
+#footer-logo img{
+    width: 10rem;
+}
+.left-links{
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+.right-links{
+    align-items: center;
+    text-align: right;
+    justify-content: center;
+}
+.right-links li{
+    text-align: right;
+    align-self: flex-end;
+    display: flex;
+    justify-content: right;
+}
+.footer-li:hover{
+    /* background-color: rgb(14, 61, 102); */
+    /* width: 100%; */
+    color: white;
+    /* display: flex;
+    text-align: center;
+    align-items: center; */
+}
+#footer-contacts p{
+    margin-bottom: 1rem;
+}
+.quicklinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.company-details{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.company-details h5{
+    margin: 0 0 1.5rem 0;
+}
+.flex p{
+    color: #868686;
+    font-size: large;
+    font-weight: 500;
+}
+.flex p a{
+    color: #868686;
+    font-size: large;
+    font-weight: 500;
+}
+.container{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1%;
+    justify-content: space-between;
+}
+p{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+p a{
+    color: white;
+}
+a{
+    font-style: none;
+}
+p a:hover{
+    color: rgb(220, 219, 219);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.address p, .contact-no p, .mail-ids p{
+    width: 60%;
+    margin-left: 1rem;
+}
+.address a p:hover{
+    color: rgb(220, 219, 219);
+}
+
+.copyright-text{
+    margin-bottom: 1rem;
+}
+.copyright-text p{
+    color: #fff;
+}
+.social-icons{
+    /* background-color: black; */
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    /* position: absolute;
+    bottom: 3%;
+    right: 0;
+    left: 0; */
+}
+.social-icon{
+    background-color: white;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    margin: 0.4rem;
+    cursor: pointer;
+}
+#twitter:hover{
+    color: rgb(34, 197, 197);
+}
+#linkedin:hover{
+    color: rgb(25, 20, 89);
+}
+#instagram:hover{
+    color: rgb(130, 24, 24);
+}
+
+
+
+/* //////////// MEDIA QUERY //////////// */
+@media only screen and (max-width: 800px) {
+        .container{
+            flex-direction: column;
+        }
+        .icons{
+            margin: 1rem;
+            padding: 3px;
+            width: 2rem;
+            height: 2rem;
+        }
+        #right{
+            margin-bottom: 1rem;
+        }
+        .company-details{
+            margin-bottom: 1rem;
+        }
+        .flex{
+            justify-content: center;
+        }
+        .company-details h5 {
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+        .footer-ul h5{
+            margin: auto;
+            margin-top: 2rem;
+        }
+        #footer-contacts{
+            margin-bottom: 2rem;
+        }
+}

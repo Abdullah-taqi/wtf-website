@@ -1,0 +1,226 @@
+/* ..................................................  Header ...................................................... */
+#cover img{
+    width: 100%;
+}
+#header-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0.5rem 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+#logo{
+    margin-left: 5%;
+}
+#logo img{
+    width: 7rem;
+}
+#header-items{
+    margin-right: 5%;
+}
+#header-div ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#header-div ul li{
+    list-style: none;
+    padding: 0 1.5rem;
+    font-size: large;
+    color: rgb(198, 198, 198);
+    position: relative;
+}
+#header-div ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    background-color: #bc0707;
+    padding: 0.5rem 1rem;
+    color: rgb(198, 198, 198);
+    font-size: large;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#gyms:after{
+content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 40%;
+    background: #bc0707;
+    left: 30%;
+}
+.nav{
+    background-color: transparent;
+}
+.nav-active{
+    background-color: black;
+}
+/* ..................................................  Search Bar ...................................................... */
+#search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid rgb(198, 198, 198);
+    margin: 2rem auto;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+    width: 80vw;
+
+}
+#search-field{
+    flex: 1;
+}
+#search-field input{
+    width: 95%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+#search-btn{
+    background-color: #bc0707;
+    padding: 0.2rem 1rem;
+    margin: 0.2rem 0;
+    color: rgb(198, 198, 198);
+    font-size: large;
+    border-radius: 5px;
+    width:3rem;
+}
+#search-btn{
+    cursor: pointer;
+}
+#search-location{
+    background: #bc0707;
+    margin: 0 1rem;
+    padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+    border-radius: 5px;
+}
+#search-location:hover{
+    cursor: pointer;
+}
+#search-icon{
+    margin-right: 1rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+/* ................................................... Badge ........................................................... */
+#badge-container{
+    width: 100%;
+    height: wrap-content;
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-between;
+    background: hsla(0, 100%, 50%, 1);
+    background: rgb(2,0,36);
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,9,9,1) 35%, rgba(73,57,107,1) 100%, rgba(76,0,255,1) 100%);
+}
+#badge-left{
+    width: 30%;
+    height: 100%;
+}
+#badge-left h1{
+    color: white;
+    width: 60%;
+    margin: auto;
+    font-size: 2.8rem;
+}
+#badge-left-bottom{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+#bar{
+    width: 3.8rem;
+    margin-top: 5%;
+    height: 11rem;
+    background-color: #d64141;
+}
+#bar-text{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 1.6rem;
+    color: #fff;
+}
+#badge-right{
+    width: 50%;
+    position: relative;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+}
+.card{
+    width: 11rem;
+    height: 11rem;
+    background-color: #cb3838;
+    margin: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#bottom-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* ................................ Media Queries .................................. */
+@media only screen and (max-width: 1000px) {
+    #header-items{
+        display: none;
+    }
+    #cards{
+        flex-direction: column;
+    }
+    #badge-right{
+        overflow: scroll;
+    }
+    #cards{
+        bottom: 10;
+        top: 0;
+    }
+    .card{
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    #badge-left-bottom {
+        margin-left: 30%;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .card{
+        display: none;
+    }
+  }
